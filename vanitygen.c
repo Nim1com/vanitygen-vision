@@ -316,7 +316,7 @@ usage(const char *name)
 "-S            Generate securecoin address\n"
 "-Q            Generate quarkcoin address\n"
 "-Z            Generate zetacoin address\n"
-"-L            Generate vision address\n"
+"-V            Generate vision address\n"
 "-X <version>  Generate address with the given version\n"
 "-F <format>   Generate address with the given format (pubkey or script)\n"
 "-P <pubkey>   Specify base public key for piecewise key generation\n"
@@ -403,9 +403,9 @@ main(int argc, char **argv)
             privtype = 224;
             scriptaddrtype = -1;
             break;
-        case 'L':
+        case 'V':
             addrtype = 70; 
-            privtype = 176;
+            privtype = 198;
             scriptaddrtype = 5;
             break;
 		case 'T':
